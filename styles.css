@@ -1,7 +1,7 @@
-  @font-face {
-    font-family: "Megadeth";
-    src: url('Megadeth.woff') format('woff');
-    font-weight:400;
+@font-face {
+  font-family: "Megadeth";
+  src: url('Megadeth.woff') format('woff');
+  font-weight:400;
 }
 
 * {
@@ -75,7 +75,7 @@ img.button {
   background-color: #832310;
   padding: 1rem;
   text-align: left;
-  font-size: 1.9vw;
+  font-size: 1.8vw;
   color: #271205;
 }
 
@@ -293,7 +293,7 @@ img.button {
     height: 34vw;
     grid-column: 3;
     grid-row: 1;
-    border-bottom: 10px solid #271205
+    border-bottom: 10px solid #271205;
   }
 
   .three {
