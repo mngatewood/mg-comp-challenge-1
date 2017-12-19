@@ -1,0 +1,340 @@
+  @font-face {
+    font-family: "Megadeth";
+    src: url('Megadeth.woff') format('woff');
+    font-weight:400;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Megadeth;
+}
+
+p span {
+  font-size: 6.5vw;
+}
+
+button {
+  height: 30%;
+  width: 40%;
+  margin: 5% 5% 5% 0;
+  background-color: inherit;
+  color: #271205;
+  border: 1px solid #271205;
+  font-size: 2vw;
+}
+
+button:hover {
+  filter: invert(100%);
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+img:hover {
+  opacity: 10;
+}
+
+img.button {
+  display: inline;
+  width: 30%;
+  height: 75%;
+  opacity: 10;
+  margin: 3% 5% 3% 0%;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-gap: 0px;
+  grid-auto-rows: minmax(125px, auto);
+  border: 10px solid #271205;
+  width: 90vw;
+  height: 54.7vw;
+  max-width: 161vh;
+  max-height: 100vh;
+  margin: auto;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.box {
+  background-size: 100% 100%;
+}
+
+.one {
+  grid-column: 1 / 3;
+  grid-row: 1;
+  background-color: #832310;
+  padding: 1rem;
+  text-align: left;
+  font-size: 1.9vw;
+  color: #271205;
+}
+
+.two { 
+  grid-column: 3;
+  grid-row: 1;
+  background-color: #561A09;
+  background-image: url("images/fanclubx.png");
+}
+
+.three {
+  grid-column: 4 / 6;
+  grid-row: 1 / 4;
+  background-image: url("images/dmcropped.jpg");
+  background-repeat: no-repeat;
+}
+
+.four {
+  grid-column: 1;
+  grid-row: 2;
+  background-color: #1A3C06;
+  background-image: url("images/concertsx.png");
+}
+
+.five {
+  grid-column: 2;
+  grid-row: 2;
+  background-color: #C33423;
+  background-image: url("images/contactx.png");
+}
+
+.six {
+  grid-column: 3;
+  grid-row: 2;
+  background-color: #832310;
+  background-image: url("images/recordx.png");
+}
+
+.seven {
+  grid-column: 1;
+  grid-row: 3;
+  background-color: #561A09;
+  background-image: url("images/bandx.png");
+}
+
+.eight {
+  grid-column: 2;
+  grid-row: 3;
+  background-color: #1A3C06;
+  background-image: url("images/newsx.png");
+}
+
+.nine {
+  grid-column: 3;
+  grid-row: 3;
+  background-color: #C33423;
+  background-image: url("images/flyingVx.png");
+}
+
+.ten {
+  display: none;
+}
+
+@media screen and (max-width: 720px){
+
+  .wrapper {
+    grid-template-columns: 125px 125px 125px 125px 125px;
+    grid-auto-rows: minmax(125px, 125px);
+    grid-auto-columns: minmax(125px, 125px);
+    width: 645px;
+    height: 395px;
+    margin: auto;
+  }
+
+  .one {
+    font-size: .85rem;
+    color: #271205;
+  }
+
+  p span {
+  font-size: 2.95rem;
+  }
+
+@media screen and (max-width: 640px){
+
+  .wrapper {
+    grid-template-columns: 125px 125px 125px 125px;
+    width: 520px;
+    height: 520px;
+    float: right;
+  }
+
+  .one {
+    grid-column: 1 / 3;
+    grid-row: 1;
+    background-color: #832310;
+  }
+
+  .three {
+    grid-column: 3 / 5;
+    grid-row: 2 / 5;
+  }
+
+  .four {
+    grid-column: 1;
+    grid-row: 4;
+  }
+
+  .five {
+    grid-column: 1;
+  }
+
+  .six {
+    grid-column: 2;
+  }
+
+  .seven {
+    grid-column: 2;
+    grid-row: 4;
+  }
+
+  .eight {
+    grid-column: 1;
+   background-color: #1A3C06;
+  }
+
+  .nine {
+    grid-column: 2;
+  }
+
+  .ten {
+    display: inline-block;
+    grid-column: 4;
+    grid-row: 1;
+    background-color: #271205;
+  }
+}
+
+@media screen and (max-width: 520px){
+
+  .wrapper {
+    grid-template-columns: 125px 125px 125px;
+    width: 395px;
+    height: 645px;
+  }
+
+  .three {
+    grid-column: 2 / 4;
+  }
+
+  .four {
+    grid-column: 3;
+    grid-row: 5;
+  }
+
+  .five {
+    grid-row: 5;
+  }
+
+  .six {
+    grid-column: 1;
+  }
+
+  .seven {
+    grid-column: 1;
+  }
+
+  .eight {
+    grid-column: 2;
+    grid-row: 5;
+  }
+
+  .nine {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .ten {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 395px){
+
+  .wrapper {
+    display: grid;
+    width: 100vw;
+    grid-template-columns: 31.7vw 31.7vw 31.7vw;
+    grid-template-rows: 31.7vw 31.7vw 31.7vw 31.7vw 31.7vw 31.7vw 31.7vw;
+    border: 1% solid #271205;
+    height: 100%;
+  }
+
+  .one {
+    position: fixed;
+    float: left;
+    width: 63vw;
+    height: 34vw;
+    grid-column: 1 / 3;
+    grid-row: 1;
+    font-size: 3.3vw;
+    border-bottom: 10px solid #271205;
+    padding: 0.5rem 0 0 0.5rem;
+  }
+
+  p span {
+    font-size: 12vw;
+  }
+
+  .two { 
+    position: fixed;
+    right: 2.6%;
+    float: right;
+    width: 31.8vw;
+    height: 34vw;
+    grid-column: 3;
+    grid-row: 1;
+    border-bottom: 10px solid #271205
+  }
+
+  .three {
+    grid-column: 1 / 4;
+    grid-row: 2 / 6;
+    background-color: blue;
+  }
+
+  .four {
+    grid-column: 1;
+    grid-row: 6;
+    background-color: #1A3C06;
+  }
+
+  .five {
+    grid-column: 2;
+    grid-row: 6;
+    background-color: #C33423;
+  }
+
+  .six {
+    grid-column: 3;
+    grid-row: 6;
+    background-color: #832310;
+  }
+
+  .seven {
+    grid-column: 1;
+    grid-row: 7;
+    background-color: #561A09;
+  }
+
+  .eight {
+    grid-column: 2;
+    grid-row: 7;
+    background-color: #1A3C06;
+  }
+
+  .nine {
+    grid-column: 3;
+    grid-row: 7;
+    background-color: #C33423;
+  }
+}
